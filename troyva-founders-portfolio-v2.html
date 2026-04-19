@@ -1,0 +1,3181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0D0608" />
+  <meta name="description"
+    content="Troyva — Rafsun Hossnain, Founder & CEO. Abrar Mahmud Hasan, Co-Founder & CTO. The team building the verified campus operating system for South Asia." />
+  <title>Troyva — Founders</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* =========================================================
+   CORE TOKENS
+   ========================================================= */
+    :root {
+      --base: #0A0509;
+      --ink: #F7E8E2;
+      --ink-soft: rgba(247, 232, 226, 0.72);
+      --ink-mute: rgba(247, 232, 226, 0.48);
+      --ink-whisper: rgba(247, 232, 226, 0.22);
+
+      --ruby: #B8243C;
+      --ruby-glow: rgba(184, 36, 60, 0.38);
+      --gold: #D4B258;
+      --gold-bright: #E8C770;
+      --gold-soft: rgba(212, 178, 88, 0.18);
+      --warm-tan: #D4B88C;
+      --aubergine: #5B2A45;
+      --plum: #321A2C;
+
+      --f-display: 'Fraunces', Georgia, serif;
+      --f-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --f-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+      --gutter: clamp(24px, 6vw, 120px);
+      --section-pad: clamp(80px, 12vh, 160px);
+
+      --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --ease-smooth: cubic-bezier(0.7, 0, 0.2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--base);
+      color: var(--ink);
+      font-family: var(--f-sans);
+      font-size: 20px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+      cursor: none;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: none;
+      cursor: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: none;
+    }
+
+    input,
+    textarea {
+      cursor: none;
+    }
+
+    ::selection {
+      background: var(--ruby);
+      color: var(--ink);
+    }
+
+    /* =========================================================
+   THE GRADIENT MESH — full-page continuous canvas
+   Multiple radial gradients, fixed, slowly drifting
+   ========================================================= */
+    .gradient-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: var(--base);
+      overflow: hidden;
+    }
+
+    .gradient-canvas::before,
+    .gradient-canvas::after,
+    .gradient-canvas .blob {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      will-change: transform;
+      mix-blend-mode: screen;
+      opacity: 0.75;
+    }
+
+    .gradient-canvas::before {
+      top: -10%;
+      left: -10%;
+      width: 70vw;
+      height: 70vw;
+      background: radial-gradient(circle, rgba(91, 42, 69, 0.55) 0%, rgba(91, 42, 69, 0) 70%);
+      animation: drift-a 28s ease-in-out infinite alternate;
+    }
+
+    .gradient-canvas::after {
+      top: 40%;
+      right: -15%;
+      width: 80vw;
+      height: 80vw;
+      background: radial-gradient(circle, rgba(184, 36, 60, 0.42) 0%, rgba(184, 36, 60, 0) 70%);
+      animation: drift-b 34s ease-in-out infinite alternate;
+    }
+
+    .gradient-canvas .blob-c {
+      bottom: -15%;
+      left: 20%;
+      width: 75vw;
+      height: 75vw;
+      background: radial-gradient(circle, rgba(212, 178, 88, 0.28) 0%, rgba(212, 178, 88, 0) 70%);
+      animation: drift-c 40s ease-in-out infinite alternate;
+    }
+
+    .gradient-canvas .blob-d {
+      top: 20%;
+      left: 40%;
+      width: 55vw;
+      height: 55vw;
+      background: radial-gradient(circle, rgba(50, 26, 44, 0.6) 0%, rgba(50, 26, 44, 0) 70%);
+      animation: drift-d 32s ease-in-out infinite alternate;
+    }
+
+    @keyframes drift-a {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(8vw, 6vh) scale(1.15);
+      }
+    }
+
+    @keyframes drift-b {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(-10vw, -4vh) scale(1.1);
+      }
+    }
+
+    @keyframes drift-c {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(6vw, -8vh) scale(1.2);
+      }
+    }
+
+    @keyframes drift-d {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      100% {
+        transform: translate(-6vw, 8vh) scale(1.08);
+      }
+    }
+
+    /* Grain overlay — gives the gradient tactile depth */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: 0.18;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.8  0 0 0 0 0.75  0 0 0 0 0.7  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    }
+
+    /* =========================================================
+   CUSTOM CURSOR — gold orb + trailing ring
+   ========================================================= */
+    .cursor-orb,
+    .cursor-trail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      will-change: transform, width, height;
+    }
+
+    .cursor-orb {
+      width: 10px;
+      height: 10px;
+      background: var(--gold-bright);
+      box-shadow:
+        0 0 12px var(--gold),
+        0 0 28px rgba(212, 178, 88, 0.6),
+        0 0 48px rgba(212, 178, 88, 0.25);
+      transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), background 0.3s ease;
+    }
+
+    .cursor-trail {
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(212, 178, 88, 0.45);
+      background: radial-gradient(circle, rgba(212, 178, 88, 0.06) 0%, transparent 70%);
+      transition: width 0.4s var(--ease-out), height 0.4s var(--ease-out), border-color 0.3s ease;
+    }
+
+    .cursor-orb.is-hover {
+      width: 6px;
+      height: 6px;
+      background: var(--ink);
+    }
+
+    .cursor-trail.is-hover {
+      width: 80px;
+      height: 80px;
+      border-color: var(--gold-bright);
+      background: radial-gradient(circle, rgba(212, 178, 88, 0.12) 0%, transparent 70%);
+    }
+
+    .cursor-orb.is-click {
+      width: 4px;
+      height: 4px;
+    }
+
+    .cursor-trail.is-click {
+      width: 30px;
+      height: 30px;
+    }
+
+    @media (hover: none),
+    (pointer: coarse) {
+
+      .cursor-orb,
+      .cursor-trail {
+        display: none;
+      }
+
+      body,
+      a,
+      button,
+      input,
+      textarea {
+        cursor: auto;
+      }
+    }
+
+    /* =========================================================
+   TYPOGRAPHY — deliberately LARGE
+   ========================================================= */
+    .eyebrow {
+      font-family: var(--f-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .eyebrow .dot {
+      margin: 0 0.6em;
+      opacity: 0.55;
+    }
+
+    .display-hero {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(64px, 11.5vw, 168px);
+      line-height: 0.95;
+      letter-spacing: -0.035em;
+      color: var(--ink);
+    }
+
+    .display-hero em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--gold);
+    }
+
+    .display-xl {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(52px, 8vw, 112px);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .display-xl em {
+      font-style: italic;
+      color: var(--warm-tan);
+      font-weight: 400;
+    }
+
+    .display-l {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(40px, 5.5vw, 80px);
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+    }
+
+    .display-l em {
+      font-style: italic;
+      color: var(--warm-tan);
+      font-weight: 400;
+    }
+
+    .display-m {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(28px, 3.4vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .lead {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(22px, 2.1vw, 32px);
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+      color: var(--ink-soft);
+      max-width: 30ch;
+    }
+
+    .lead em {
+      font-style: italic;
+      color: var(--warm-tan);
+    }
+
+    .body-l {
+      font-size: clamp(18px, 1.3vw, 22px);
+      line-height: 1.75;
+      color: var(--ink-soft);
+      max-width: 48ch;
+      font-weight: 400;
+    }
+
+    .body-m {
+      font-size: clamp(17px, 1.15vw, 19px);
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 56ch;
+      font-weight: 400;
+    }
+
+    /* =========================================================
+   NAV
+   ========================================================= */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px var(--gutter);
+      transition: padding 0.5s var(--ease-out), background 0.5s ease;
+    }
+
+    .nav.scrolled {
+      padding: 18px var(--gutter);
+      background: rgba(10, 5, 9, 0.55);
+      backdrop-filter: blur(24px) saturate(140%);
+      -webkit-backdrop-filter: blur(24px) saturate(140%);
+      border-bottom: 0.5px solid rgba(212, 178, 88, 0.15);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .nav-logo svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .nav-logo-text {
+      font-family: var(--f-display);
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-sub {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding-left: 14px;
+      margin-left: 4px;
+      border-left: 0.5px solid var(--gold-soft);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -8px;
+      height: 1px;
+      background: var(--gold);
+      transition: right 0.42s var(--ease-smooth);
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-links a:hover::after {
+      right: 0;
+    }
+
+    .nav-cta {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 26px;
+      border: 0.5px solid var(--gold-soft);
+      border-radius: 999px;
+      background: rgba(212, 178, 88, 0.04);
+      transition: all 0.4s var(--ease-out);
+    }
+
+    .nav-cta:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--base);
+    }
+
+    .nav-mobile-toggle {
+      display: none;
+      width: 32px;
+      height: 32px;
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    @media (max-width: 960px) {
+      .nav-mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(10, 5, 9, 0.95);
+        backdrop-filter: blur(24px);
+        padding: 40px var(--gutter);
+        border-bottom: 0.5px solid rgba(212, 178, 88, 0.15);
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-sub {
+        display: none;
+      }
+    }
+
+    /* =========================================================
+   LOADER
+   ========================================================= */
+    .loader {
+      position: fixed;
+      inset: 0;
+      background: var(--base);
+      z-index: 9998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .loader-text {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(24px, 3vw, 40px);
+      color: var(--ink);
+      opacity: 0;
+      animation: fadeInOut 1.6s ease 300ms forwards;
+    }
+
+    .loader-bar {
+      width: 200px;
+      height: 1px;
+      background: rgba(212, 178, 88, 0.15);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .loader-bar::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      animation: loadProgress 1.8s var(--ease-smooth) 200ms forwards;
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      30%,
+      70% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes loadProgress {
+      to {
+        width: 100%;
+      }
+    }
+
+    .loader.out {
+      animation: loaderDismiss 800ms var(--ease-out) 2000ms forwards;
+    }
+
+    @keyframes loaderDismiss {
+      to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    }
+
+    /* =========================================================
+   ACT I — HERO
+   ========================================================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      padding: 180px var(--gutter) 120px;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      position: relative;
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      margin-bottom: 60px;
+      opacity: 0;
+      animation: fadeRise 1.2s var(--ease-out) 2200ms forwards;
+    }
+
+    .hero-question {
+      margin-bottom: 80px;
+      max-width: 22ch;
+    }
+
+    .hero-question .line {
+      display: block;
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    .hero-question .line.l1 {
+      animation: fadeRise 1.4s var(--ease-out) 2400ms forwards;
+    }
+
+    .hero-question .line.l2 {
+      animation: fadeRise 1.4s var(--ease-out) 2800ms forwards;
+    }
+
+    .hero-question .line.l3 {
+      animation: fadeRise 1.4s var(--ease-out) 3400ms forwards;
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 60px;
+      margin-top: 80px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeRise 1.2s var(--ease-out) 4000ms forwards;
+    }
+
+    .hero-founder {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .hero-founder .role {
+      font-family: var(--f-mono);
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-founder .name {
+      font-family: var(--f-display);
+      font-size: clamp(26px, 2.2vw, 32px);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-founder .desc {
+      font-size: 15px;
+      color: var(--ink-mute);
+      max-width: 28ch;
+      margin-top: 8px;
+    }
+
+    .hero-founder-divider {
+      width: 1px;
+      height: 80px;
+      background: linear-gradient(to bottom, transparent, var(--gold-soft), transparent);
+    }
+
+    @media (max-width: 760px) {
+      .hero-inner {
+        text-align: center;
+      }
+
+      .hero-question {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-meta {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      .hero-founder {
+        align-items: center;
+        text-align: center !important;
+      }
+
+      .hero-founder .desc {
+        text-align: center;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      .hero-founder-divider {
+        display: none;
+      }
+    }
+
+    .hero-bottom-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      z-index: 3;
+    }
+
+    .hero-scroll-hint {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      opacity: 0;
+      animation: fadeRise 1.2s ease 4400ms forwards, floatHint 3s ease-in-out 5600ms infinite;
+    }
+
+    .hero-scroll-hint .text {
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-whisper);
+    }
+
+    .hero-scroll-hint .line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+
+    @keyframes floatHint {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(8px);
+      }
+    }
+
+    .hero-ticker {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      text-align: center;
+      opacity: 0;
+      animation: fadeRise 1.2s ease 4400ms forwards;
+    }
+
+    .hero-ticker .pulse {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-right: 8px;
+      animation: pulse 2s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    .hero-ticker .line {
+      display: block;
+      margin-top: 6px;
+      color: var(--ink-whisper);
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.7);
+      }
+    }
+
+    @keyframes fadeRise {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 760px) {
+
+      /* Stack hero-inner and hero-bottom-wrap vertically */
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 60px;
+      }
+
+      .hero-inner {
+        width: 100%;
+      }
+
+      .hero-bottom-wrap {
+        position: static;
+        margin-top: 48px;
+        width: 100%;
+      }
+    }
+
+    /* =========================================================
+   SECTION BASE
+   ========================================================= */
+    .section {
+      position: relative;
+      padding: var(--section-pad) var(--gutter);
+      overflow: hidden;
+    }
+
+    .section-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-eyebrow {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      margin-bottom: 48px;
+      max-width: 24ch;
+    }
+
+    .section-intro {
+      margin-bottom: 120px;
+      max-width: 760px;
+    }
+
+    /* =========================================================
+   ACT II — TWO LIVES IN PARALLEL (the centerpiece)
+   ========================================================= */
+    .act-two {
+      position: relative;
+      padding: var(--section-pad) var(--gutter);
+    }
+
+    .act-two-header {
+      max-width: 1400px;
+      margin: 0 auto 80px;
+      text-align: center;
+    }
+
+    .act-two-header .display-xl {
+      margin: 0 auto 28px;
+      max-width: 22ch;
+    }
+
+    .act-two-header .lead {
+      margin: 0 auto;
+      max-width: 48ch;
+      color: var(--ink-soft);
+      text-align: center;
+    }
+
+    .parallel-stage {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* The central gold seam */
+    .parallel-seam {
+      position: absolute;
+      left: 50%;
+      top: 40px;
+      bottom: 40px;
+      width: 1px;
+      background: linear-gradient(to bottom,
+          transparent 0%,
+          var(--gold-soft) 8%,
+          var(--gold) 50%,
+          var(--gold-soft) 92%,
+          transparent 100%);
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .parallel-seam::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 24px var(--gold), 0 0 48px var(--gold-soft);
+      animation: seamNodePulse 3s ease-in-out infinite;
+    }
+
+    @keyframes seamNodePulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 24px var(--gold), 0 0 48px var(--gold-soft);
+      }
+
+      50% {
+        box-shadow: 0 0 40px var(--gold-bright), 0 0 80px rgba(212, 178, 88, 0.4);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .parallel-seam {
+        display: none;
+      }
+    }
+
+    .parallel-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 120px);
+      margin-bottom: 120px;
+      position: relative;
+    }
+
+    @media (max-width: 900px) {
+
+      /* Switch stage to flex so order property works across all direct children */
+      .parallel-stage {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Make row wrappers transparent so cards become direct flex children of stage */
+      .parallel-row {
+        display: contents;
+      }
+
+      /* Rafsun header block: first */
+      .path-header-block:not(.right) {
+        order: 1;
+        padding: 0 0 20px;
+      }
+
+      /* All Rafsun cards: second group */
+      .chapter-card.rafsun {
+        order: 2;
+        margin-bottom: 20px;
+      }
+
+      /* Abrar header block: third (separator) */
+      .path-header-block.right {
+        order: 3;
+        text-align: left;
+        padding: 36px 0 20px;
+        margin-top: 32px;
+        border-top: 0.5px solid var(--gold-soft);
+      }
+
+      /* All Abrar cards: fourth group */
+      .chapter-card.abrar {
+        order: 4;
+        margin-bottom: 20px;
+      }
+
+      /* Abrar accent bar: move to left side on mobile like rafsun */
+      .chapter-card.abrar::after {
+        right: auto;
+        left: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    }
+
+    .parallel-row:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Premium glass-card with luxurious hover */
+    .chapter-card {
+      position: relative;
+      padding: 48px;
+      border-radius: 20px;
+      background: linear-gradient(135deg,
+          rgba(247, 232, 226, 0.04) 0%,
+          rgba(247, 232, 226, 0.02) 100%);
+      backdrop-filter: blur(24px) saturate(130%);
+      -webkit-backdrop-filter: blur(24px) saturate(130%);
+      border: 0.5px solid rgba(247, 232, 226, 0.08);
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(247, 232, 226, 0.06);
+      transition: all 0.7s var(--ease-out);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .chapter-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%),
+          rgba(212, 178, 88, 0.08),
+          transparent 40%);
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      pointer-events: none;
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 178, 88, 0.25);
+      box-shadow:
+        0 40px 100px rgba(0, 0, 0, 0.6),
+        0 0 0 0.5px rgba(212, 178, 88, 0.2),
+        inset 0 1px 0 rgba(247, 232, 226, 0.1);
+    }
+
+    .chapter-card:hover::before {
+      opacity: 1;
+    }
+
+    .chapter-card.rafsun::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 40%;
+      width: 3px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--ruby), var(--gold));
+      border-radius: 0 3px 3px 0;
+    }
+
+    .chapter-card.abrar::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 40%;
+      width: 3px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--gold), var(--aubergine));
+      border-radius: 3px 0 0 3px;
+    }
+
+    .chapter-year {
+      font-family: var(--f-mono);
+      font-size: 12px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .chapter-title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(24px, 2.4vw, 32px);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .chapter-body {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+    }
+
+    .chapter-tag {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 6px 14px;
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 0.5px solid var(--gold-soft);
+      border-radius: 999px;
+      background: rgba(212, 178, 88, 0.04);
+    }
+
+    .chapter-card.pivot {
+      background: linear-gradient(135deg,
+          rgba(184, 36, 60, 0.1) 0%,
+          rgba(212, 178, 88, 0.06) 100%);
+      border-color: rgba(212, 178, 88, 0.35);
+    }
+
+    .chapter-card.pivot .chapter-year {
+      color: var(--gold-bright);
+    }
+
+    .chapter-card.pivot .chapter-title {
+      color: var(--gold-bright);
+    }
+
+    .parallel-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 120px);
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 900px) {
+
+      /* Make parallel-header transparent too so its children join the flex flow */
+      .parallel-header {
+        display: contents;
+      }
+    }
+
+    .path-header-block {
+      padding: 36px 0;
+    }
+
+    .path-header-block.right {
+      text-align: right;
+    }
+
+    @media (max-width: 900px) {
+      .path-header-block.right {
+        text-align: left;
+      }
+    }
+
+    .path-header-label {
+      font-family: var(--f-mono);
+      font-size: 12px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .path-header-name {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(44px, 5.5vw, 80px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .path-header-role {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: clamp(18px, 1.6vw, 24px);
+      color: var(--warm-tan);
+      margin-bottom: 28px;
+    }
+
+    .path-header-bio {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 42ch;
+    }
+
+    .path-header-block.right .path-header-bio {
+      margin-left: auto;
+    }
+
+    /* =========================================================
+   ACT III — THE CONVERGENCE
+   ========================================================= */
+    .convergence {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--section-pad) var(--gutter);
+      text-align: center;
+    }
+
+    .convergence-inner {
+      max-width: 900px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .convergence-ring {
+      width: 350px;
+      height: 350px;
+      margin: 0 auto 60px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .convergence-ring .ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 0.5px solid var(--gold);
+    }
+
+    .convergence-ring .ring-1 {
+      inset: 0;
+      opacity: 0.3;
+      animation: ringPulse 4s ease-in-out infinite;
+    }
+
+    .convergence-ring .ring-2 {
+      inset: 20px;
+      opacity: 0.5;
+      animation: ringPulse 4s ease-in-out 0.8s infinite;
+    }
+
+    .convergence-ring .ring-3 {
+      inset: 40px;
+      opacity: 0.7;
+      animation: ringPulse 4s ease-in-out 1.6s infinite;
+    }
+
+    .convergence-ring .ring-inner {
+      position: absolute;
+      inset: 65px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212, 178, 88, 0.18) 0%, transparent 70%);
+      border: 0.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .convergence-ring img {
+      max-width: none;
+      /* Image width is controlled by the HTML width attribute */
+    }
+
+    @keyframes ringPulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+      }
+    }
+
+    .convergence-date {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(28px, 3vw, 44px);
+      color: var(--warm-tan);
+      margin-bottom: 24px;
+      letter-spacing: -0.015em;
+    }
+
+    .convergence-headline {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(56px, 9vw, 128px);
+      line-height: 0.95;
+      letter-spacing: -0.035em;
+      margin-bottom: 40px;
+    }
+
+    .convergence-body {
+      font-size: clamp(19px, 1.5vw, 24px);
+      line-height: 1.65;
+      color: var(--ink-soft);
+      max-width: 52ch;
+      margin: 0 auto 24px;
+      font-weight: 300;
+    }
+
+    .convergence-quote {
+      margin-top: 60px;
+      font-family: var(--f-display);
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(22px, 2.4vw, 34px);
+      color: var(--gold);
+      max-width: 30ch;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.4;
+      padding-top: 48px;
+      border-top: 0.5px solid var(--gold-soft);
+    }
+
+    .convergence-stats {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      padding-top: 48px;
+      border-top: 0.5px solid var(--gold-soft);
+    }
+
+    @media (max-width: 760px) {
+      .convergence-stats {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .conv-stat .num {
+      font-family: var(--f-display);
+      font-weight: 300;
+      font-size: clamp(48px, 5vw, 72px);
+      color: var(--gold);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .conv-stat .lbl {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-top: 16px;
+    }
+
+    /* =========================================================
+   ACT IV — THE DOSSIER (per founder)
+   ========================================================= */
+    .dossier {
+      padding: var(--section-pad) var(--gutter);
+      position: relative;
+    }
+
+    .dossier-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .dossier-header {
+      margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: end;
+    }
+
+    @media (max-width: 960px) {
+      .dossier-header {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .dossier-portrait {
+        max-width: 100%;
+        aspect-ratio: 3/4;
+        margin: 0 auto;
+      }
+
+      .dossier-intro {
+        text-align: center;
+      }
+
+      .dossier-intro .lead {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .dossier-header {
+        margin-bottom: 60px;
+      }
+    }
+
+    .dossier-portrait {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/5;
+      max-width: 480px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(184, 36, 60, 0.2), rgba(91, 42, 69, 0.3));
+      border: 0.5px solid var(--gold-soft);
+    }
+
+    .dossier-portrait svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .dossier-intro .eyebrow {
+      margin-bottom: 28px;
+    }
+
+    .dossier-intro .display-xl {
+      margin-bottom: 32px;
+    }
+
+    .dossier-intro .lead {
+      max-width: 40ch;
+    }
+
+    .dossier-bio {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 80px;
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 960px) {
+      .dossier-bio {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .dossier-sidebar {
+        border-left: none;
+        border-top: 0.5px solid var(--gold-soft);
+        padding-left: 0;
+        padding-top: 40px;
+      }
+
+      .dossier-pullquote {
+        margin: 40px 0;
+        padding: 32px 0;
+      }
+    }
+
+    .dossier-bio-text .body-l {
+      margin-bottom: 24px;
+    }
+
+    .dossier-sidebar {
+      border-left: 0.5px solid var(--gold-soft);
+      padding-left: 40px;
+    }
+
+    .sidebar-block {
+      margin-bottom: 48px;
+    }
+
+    .sidebar-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .sidebar-label {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .sidebar-item {
+      padding: 14px 0;
+      border-bottom: 0.5px solid rgba(247, 232, 226, 0.08);
+    }
+
+    .sidebar-item:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-item-title {
+      font-family: var(--f-display);
+      font-weight: 500;
+      font-size: 19px;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .sidebar-item-meta {
+      font-size: 14px;
+      color: var(--ink-mute);
+      line-height: 1.5;
+    }
+
+    .dossier-pullquote {
+      margin: 60px 0;
+      padding: 48px 0;
+      border-top: 0.5px solid var(--gold-soft);
+      border-bottom: 0.5px solid var(--gold-soft);
+      text-align: center;
+    }
+
+    .dossier-pullquote q {
+      quotes: none;
+    }
+
+    .dossier-pullquote .text {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(28px, 3.4vw, 48px);
+      line-height: 1.35;
+      color: var(--gold);
+      max-width: 30ch;
+      margin: 0 auto;
+      letter-spacing: -0.01em;
+    }
+
+    .dossier-pullquote .text::before {
+      content: '"';
+      margin-right: 6px;
+      opacity: 0.6;
+    }
+
+    .dossier-pullquote .text::after {
+      content: '"';
+      margin-left: 6px;
+      opacity: 0.6;
+    }
+
+    /* =========================================================
+   ACHIEVEMENTS & AWARDS — premium card grid (CEO only)
+   ========================================================= */
+    .achievements {
+      padding: var(--section-pad) var(--gutter);
+      position: relative;
+    }
+
+    .ach-header {
+      max-width: 1400px;
+      margin: 0 auto 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: end;
+    }
+
+    @media (max-width: 900px) {
+      .ach-header {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    .ach-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 760px) {
+      .ach-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ach-card {
+      position: relative;
+      padding: 40px 40px 44px;
+      border-radius: 16px;
+      background: linear-gradient(135deg,
+          rgba(247, 232, 226, 0.03) 0%,
+          rgba(247, 232, 226, 0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 0.5px solid rgba(247, 232, 226, 0.08);
+      transition: all 0.6s var(--ease-out);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .ach-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .ach-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(212, 178, 88, 0.28);
+      background: linear-gradient(135deg,
+          rgba(212, 178, 88, 0.06) 0%,
+          rgba(247, 232, 226, 0.02) 100%);
+    }
+
+    .ach-card:hover::before {
+      opacity: 1;
+    }
+
+    .ach-card-year {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .ach-card-title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(22px, 2vw, 28px);
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .ach-card-body {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+    }
+
+    .ach-card-badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 5px 12px;
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(212, 178, 88, 0.08);
+      border-radius: 4px;
+    }
+
+    /* =========================================================
+   RESEARCH & PUBLICATIONS — editorial treatment
+   ========================================================= */
+    .research {
+      padding: var(--section-pad) var(--gutter);
+      position: relative;
+    }
+
+    .research-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .research-header {
+      margin-bottom: 60px;
+      max-width: 800px;
+    }
+
+    .research-entry {
+      position: relative;
+      padding: 60px 0;
+      border-top: 0.5px solid var(--gold-soft);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .research-entry:last-child {
+      border-bottom: 0.5px solid var(--gold-soft);
+    }
+
+    @media (max-width: 760px) {
+      .research-entry {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    .research-status {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding-top: 8px;
+      position: relative;
+    }
+
+    .research-status::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-right: 12px;
+      animation: pulse 2s ease-in-out infinite;
+      vertical-align: middle;
+    }
+
+    .research-content-title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .research-content-body {
+      font-size: 18px;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      max-width: 56ch;
+      margin-bottom: 24px;
+    }
+
+    .research-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .research-tag {
+      padding: 6px 14px;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--warm-tan);
+      border: 0.5px solid rgba(212, 178, 88, 0.2);
+      border-radius: 999px;
+      background: rgba(212, 178, 88, 0.03);
+    }
+
+    /* =========================================================
+   PROJECTS — showcase cards
+   ========================================================= */
+    .projects {
+      padding: var(--section-pad) var(--gutter);
+      position: relative;
+    }
+
+    .projects-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .projects-header {
+      margin-bottom: 60px;
+      max-width: 700px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 960px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .project-card {
+      position: relative;
+      padding: 44px 36px;
+      border-radius: 16px;
+      background: linear-gradient(135deg,
+          rgba(247, 232, 226, 0.03) 0%,
+          rgba(247, 232, 226, 0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 0.5px solid rgba(247, 232, 226, 0.08);
+      transition: all 0.7s var(--ease-out);
+      overflow: hidden;
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      isolation: isolate;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 178, 88, 0.25);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-number {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .project-title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(26px, 2.4vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .project-body {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      flex: 1;
+    }
+
+    .project-stack {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 0.5px solid rgba(212, 178, 88, 0.15);
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: var(--ink-mute);
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+   BEYOND THE WORK
+   ========================================================= */
+    .beyond {
+      padding: var(--section-pad) var(--gutter);
+      position: relative;
+    }
+
+    .beyond-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .beyond-header {
+      text-align: center;
+      margin-bottom: 72px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .beyond-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1.2fr 1.4fr;
+      grid-auto-rows: minmax(280px, auto);
+      gap: 28px;
+    }
+
+    @media (max-width: 960px) {
+      .beyond-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+    }
+
+    .beyond-card {
+      position: relative;
+      padding: 44px 40px;
+      border-radius: 14px;
+      background: linear-gradient(135deg,
+          rgba(247, 232, 226, 0.04) 0%,
+          rgba(247, 232, 226, 0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 0.5px solid rgba(247, 232, 226, 0.08);
+      transition: all 0.6s var(--ease-out);
+      overflow: hidden;
+    }
+
+    .beyond-card.wide {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 960px) {
+      .beyond-card.wide {
+        grid-column: 1;
+      }
+    }
+
+    .beyond-card.tall {
+      grid-row: span 2;
+    }
+
+    @media (max-width: 960px) {
+      .beyond-card.tall {
+        grid-row: auto;
+      }
+    }
+
+    .beyond-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(212, 178, 88, 0.22);
+    }
+
+    .beyond-attrib {
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .beyond-title {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(24px, 2.4vw, 32px);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .beyond-body {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--ink-soft);
+    }
+
+    /* =========================================================
+   CONTACT
+   ========================================================= */
+    .contact {
+      padding: var(--section-pad) var(--gutter) 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    .contact-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-headline {
+      margin-bottom: 32px;
+    }
+
+    .contact-sub {
+      margin: 0 auto 80px;
+      max-width: 40ch;
+      color: var(--ink-soft);
+      text-align: center;
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      text-align: left;
+    }
+
+    @media (max-width: 760px) {
+      .contact-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-card {
+      padding: 40px;
+      border-radius: 16px;
+      background: linear-gradient(135deg,
+          rgba(247, 232, 226, 0.04) 0%,
+          rgba(247, 232, 226, 0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 0.5px solid rgba(247, 232, 226, 0.1);
+      transition: all 0.6s var(--ease-out);
+    }
+
+    .contact-card:hover {
+      border-color: rgba(212, 178, 88, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .contact-name {
+      font-family: var(--f-display);
+      font-weight: 500;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .contact-role {
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      background: rgba(247, 232, 226, 0.02);
+      border: 0.5px solid rgba(247, 232, 226, 0.06);
+      font-size: 14px;
+      color: var(--ink-soft);
+      transition: all 0.4s var(--ease-out);
+    }
+
+    .contact-link:hover {
+      background: rgba(212, 178, 88, 0.06);
+      border-color: var(--gold-soft);
+      color: var(--ink);
+      transform: translateX(4px);
+    }
+
+    .contact-link .arrow {
+      color: var(--gold);
+      font-family: var(--f-display);
+    }
+
+    /* =========================================================
+   FOOTER
+   ========================================================= */
+    .foot {
+      padding: 80px var(--gutter) 40px;
+      border-top: 0.5px solid rgba(212, 178, 88, 0.1);
+      background: rgba(10, 5, 9, 0.6);
+      backdrop-filter: blur(20px);
+    }
+
+    .foot-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    @media (max-width: 760px) {
+      .foot {
+        padding: 60px var(--gutter) 40px;
+      }
+
+      .foot-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+      }
+
+      .foot-meta {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+
+    .foot-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .foot-brand .mark {
+      width: 22px;
+      height: 22px;
+    }
+
+    .foot-brand .text {
+      font-family: var(--f-display);
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .foot-meta {
+      display: flex;
+      gap: 32px;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      flex-wrap: wrap;
+    }
+
+    .foot-meta .pulse {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: pulse 2s infinite;
+    }
+
+    /* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s var(--ease-out), transform 1s var(--ease-out);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-d1 {
+      transition-delay: 0.12s;
+    }
+
+    .reveal-d2 {
+      transition-delay: 0.24s;
+    }
+
+    .reveal-d3 {
+      transition-delay: 0.36s;
+    }
+
+    .reveal-d4 {
+      transition-delay: 0.48s;
+    }
+
+    /* Card staggered reveal */
+    .card-reveal {
+      opacity: 0;
+      transform: translateY(60px) scale(0.98);
+      transition: opacity 1.2s var(--ease-out), transform 1.2s var(--ease-out);
+    }
+
+    .card-reveal.in {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .gradient-canvas::before,
+      .gradient-canvas::after,
+      .gradient-canvas .blob {
+        animation: none;
+      }
+
+      .reveal,
+      .card-reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .hero-question .line,
+      .hero-eyebrow,
+      .hero-meta,
+      .hero-scroll-hint,
+      .hero-ticker,
+      .loader-text {
+        opacity: 1;
+      }
+
+      .loader {
+        display: none;
+      }
+
+      .cursor-orb,
+      .cursor-trail {
+        display: none;
+      }
+
+      body,
+      a,
+      button {
+        cursor: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============ GRADIENT MESH ============ -->
+  <div class="gradient-canvas" aria-hidden="true">
+    <div class="blob blob-c"></div>
+    <div class="blob blob-d"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+  <div class="cursor-orb" id="cursor-orb" aria-hidden="true"></div>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-text">Two paths. One gate.</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo" data-hover>
+      <img src="assets/troyva-logo-white.png" alt="Troyva" width="150px">
+      <span class="nav-sub">Founders</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#rafsun" data-hover>Rafsun</a>
+      <a href="#abrar" data-hover>Abrar</a>
+      <a href="#convergence" data-hover>The team</a>
+      <a href="#contact" data-hover>Contact</a>
+      <a href="https://troyva.com" class="nav-cta" data-hover>View product</a>
+    </div>
+    <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Toggle menu" data-hover>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ============ ACT I — HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-eyebrow eyebrow">
+        <span>Act I</span><span class="dot">·</span><span>The question</span>
+      </div>
+
+      <h1 class="display-hero hero-question">
+        <span class="line l1">What if one app could</span>
+        <span class="line l2">replace every broken group chat,</span>
+        <span class="line l3">on every campus, <em>for good</em>?</span>
+      </h1>
+
+      <div class="hero-meta">
+        <div class="hero-founder">
+          <div class="role">Founder & CEO</div>
+          <div class="name">Rafsun Hossnain</div>
+          <div class="desc">Strategy, product, campus network, and the conviction this had to exist.</div>
+        </div>
+
+        <!-- <div class="hero-founder-divider" aria-hidden="true"></div> -->
+
+        <div class="hero-founder" style="text-align: right;">
+          <div class="role">Co-Founder & CTO</div>
+          <div class="name">Abrar Mahmud Hasan</div>
+          <div class="desc" style="margin-left: auto;">Systems, infrastructure, and the engineering depth to make the
+            vision ship.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-bottom-wrap">
+      <div class="hero-scroll-hint">
+        <span class="text">Scroll</span>
+        <span class="line"></span>
+      </div>
+
+      <div class="hero-ticker">
+        <span class="pulse"></span><span id="live-time">06:29</span> · Dhaka, live
+        <span class="line">Day <span id="day-count">48</span> · since founding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACT II — TWO LIVES IN PARALLEL ============ -->
+  <section class="act-two" id="parallel">
+    <div class="act-two-header">
+      <div class="eyebrow reveal">Act II <span class="dot">·</span> Two lives in parallel</div>
+      <h2 class="display-xl reveal reveal-d1">
+        Two paths.<br>
+        <em>One gate.</em>
+      </h2>
+      <p class="lead reveal reveal-d2">
+        Six years apart, working on different problems in different cities — until one question pulled both of them to
+        the same table.
+      </p>
+    </div>
+
+    <div class="parallel-stage">
+      <div class="parallel-seam" aria-hidden="true"></div>
+
+      <div class="parallel-header">
+        <div class="path-header-block">
+          <div class="path-header-label">Path one</div>
+          <h3 class="path-header-name">Rafsun<br><em style="color: var(--warm-tan); font-style: italic;">Hossnain</em>
+          </h3>
+          <div class="path-header-role">Research, leadership, and the arc of a founder</div>
+          <p class="path-header-bio">Built Troyva's vision solo — brand, prototype, pitch, waitlist — before recruiting
+            a co-founder. Cambridge A-Levels at 4.0 GPA. NASA HERC 9th globally. Research shared with UNICEF. A free
+            village library funded from savings.</p>
+        </div>
+
+        <div class="path-header-block right">
+          <div class="path-header-label">Path two</div>
+          <h3 class="path-header-name">Abrar<br><em style="color: var(--warm-tan); font-style: italic;">Mahmud
+              Hasan</em></h3>
+          <div class="path-header-role">Engineering, infrastructure, and the ship itself</div>
+          <p class="path-header-bio">Production-grade engineering on day one. 90% manual-process reduction at Shahrish
+            Engineering. Kubernetes on AWS EKS as a personal project. Champion of BUET CSE Fest 2026 DevOps Hackathon.
+          </p>
+        </div>
+      </div>
+
+      <!-- Row 1 — Early -->
+      <div class="parallel-row">
+        <article class="chapter-card rafsun card-reveal">
+          <div class="chapter-year">2020 – 2023</div>
+          <h4 class="chapter-title">World Scholar's Cup</h4>
+          <p class="chapter-body">Twenty-five Gold Medals and fifteen Silver across global rounds over three consecutive
+            years. Early proof of competitive range, discipline, and international presence.</p>
+          <div class="chapter-tag">Competition · International</div>
+        </article>
+        <article class="chapter-card abrar card-reveal reveal-d1">
+          <div class="chapter-year">2022 – 2023</div>
+          <h4 class="chapter-title">General Secretary, Notre Dame Science Club</h4>
+          <p class="chapter-body">Led science engagement and outreach at one of Bangladesh's top colleges. First
+            experience running a membership organization at scale — a pattern that would repeat.</p>
+          <div class="chapter-tag">Leadership · Dhaka</div>
+        </article>
+      </div>
+
+      <!-- Row 2 — Research + IUT -->
+      <div class="parallel-row">
+        <article class="chapter-card rafsun card-reveal">
+          <div class="chapter-year">2022</div>
+          <h4 class="chapter-title">Greenwich Olympiad — Silver Medal</h4>
+          <p class="chapter-body">Primary research on child marriage in Bangladesh. Findings were shared with UNICEF and
+            Plan International. First published research work that reached policy audiences.</p>
+          <div class="chapter-tag">Research · UNICEF</div>
+        </article>
+        <article class="chapter-card abrar card-reveal reveal-d1">
+          <div class="chapter-year">2022 – Ongoing</div>
+          <h4 class="chapter-title">B.Sc. Computer Science, IUT</h4>
+          <p class="chapter-body">Islamic University of Technology — Bangladesh's premier CS program. CGPA 3.80/4.00.
+            Consistent first-division performance while shipping production software professionally.</p>
+          <div class="chapter-tag">Academic · CGPA 3.80</div>
+        </article>
+      </div>
+
+      <!-- Row 3 — Community + Engineering -->
+      <div class="parallel-row">
+        <article class="chapter-card rafsun card-reveal">
+          <div class="chapter-year">2023</div>
+          <h4 class="chapter-title">Sarbosheba Foundation</h4>
+          <p class="chapter-body">Founded a village-level community service organisation in rural Bangladesh. Opened
+            with the quiet act — a free village library funded from personal savings, for readers who had never had one.
+          </p>
+          <div class="chapter-tag">Community · Rural</div>
+        </article>
+        <article class="chapter-card abrar card-reveal reveal-d1">
+          <div class="chapter-year">2024 – 2025</div>
+          <h4 class="chapter-title">Jr. Software Engineer, Shahrish Engineering</h4>
+          <p class="chapter-body">Delivered production-grade ERP modules and internal supply-chain systems that reduced
+            manual data handling by ninety percent. First enterprise deployment credit.</p>
+          <div class="chapter-tag">Production · ERP</div>
+        </article>
+      </div>
+
+      <!-- Row 4 — NASA + Valerix -->
+      <div class="parallel-row">
+        <article class="chapter-card rafsun card-reveal">
+          <div class="chapter-year">2025</div>
+          <h4 class="chapter-title">NASA HERC — 9th Globally</h4>
+          <p class="chapter-body">Engineering and Finance Team Lead for Bangladesh at NASA's Human Exploration Rover
+            Challenge. Placed ninth in the world. First international engineering leadership credit.</p>
+          <div class="chapter-tag">Engineering · NASA</div>
+        </article>
+        <article class="chapter-card abrar card-reveal reveal-d1">
+          <div class="chapter-year">2025</div>
+          <h4 class="chapter-title">Valerix — Personal Infrastructure</h4>
+          <p class="chapter-body">A Kubernetes-orchestrated microservices platform on AWS EKS demonstrating service
+            resilience, controlled failures, and production-style deployment. The exact infrastructure philosophy Troyva
+            needs to scale.</p>
+          <div class="chapter-tag">Kubernetes · AWS</div>
+        </article>
+      </div>
+
+      <!-- Row 5 — The pivots -->
+      <div class="parallel-row">
+        <article class="chapter-card rafsun pivot card-reveal">
+          <div class="chapter-year">March 1, 2026</div>
+          <h4 class="chapter-title">Troyva · Founded</h4>
+          <p class="chapter-body">Incorporated Troyva. Working prototype shipped within five days. Two hundred verified
+            students on the waitlist within four weeks — without a single marketing dollar spent. Then recruited the
+            co-founder.</p>
+          <div class="chapter-tag">The pivot</div>
+        </article>
+        <article class="chapter-card abrar pivot card-reveal reveal-d1">
+          <div class="chapter-year">March 2026</div>
+          <h4 class="chapter-title">Troyva · Co-Founder & CTO</h4>
+          <p class="chapter-body">Joined Troyva after winning BUET CSE Fest 2026's DevOps Hackathon. Now leads technical
+            architecture, infrastructure, mobile, and the AI layer underneath verification.</p>
+          <div class="chapter-tag">The pivot</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACT III — THE CONVERGENCE ============ -->
+  <section class="convergence" id="convergence">
+    <div class="convergence-inner">
+      <div class="convergence-ring reveal">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="ring-inner">
+          <img src="assets/troyva-logo-mark-white.png" alt=":Troyva" width="200px">
+        </div>
+      </div>
+
+      <div class="eyebrow reveal reveal-d1">Act III <span class="dot">·</span> The convergence</div>
+      <div class="convergence-date reveal reveal-d1">March 1, 2026</div>
+      <h2 class="convergence-headline reveal reveal-d2">The paths met.</h2>
+
+      <p class="convergence-body reveal reveal-d3">
+        Two operators with independent track records. One hypothesis — that the fifty million university students of
+        South Asia deserve a verified campus operating system.
+      </p>
+      <p class="convergence-body reveal reveal-d3">
+        Five days after the founding date, the working prototype was live. Twenty-seven days after, two hundred verified
+        students had joined the waitlist, entirely through organic networks.
+      </p>
+
+      <div class="convergence-quote reveal reveal-d4">
+        Rafsun knows what to build. Abrar knows how to build it.
+      </div>
+
+      <div class="convergence-stats reveal reveal-d4">
+        <div class="conv-stat">
+          <div class="num" id="stat-days">48</div>
+          <div class="lbl">Days since founding</div>
+        </div>
+        <div class="conv-stat">
+          <div class="num">5</div>
+          <div class="lbl">Days to prototype</div>
+        </div>
+        <div class="conv-stat">
+          <div class="num">200+</div>
+          <div class="lbl">Verified waitlist</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACT IV — THE DOSSIER: RAFSUN ============ -->
+  <section class="dossier" id="rafsun">
+    <div class="dossier-inner">
+      <div class="dossier-header">
+        <div class="dossier-portrait reveal">
+          <img src="assets/rafsun-profile-pic.png" alt="Rafsun Hossnain" height="100%">
+        </div>
+
+        <div class="dossier-intro">
+          <div class="eyebrow reveal">The founder <span class="dot">·</span> Act IV</div>
+          <h2 class="display-xl reveal reveal-d1">Rafsun<br>Hossnain.</h2>
+          <p class="lead reveal reveal-d2">
+            Research-trained, leadership-tested, and building Troyva with the conviction of someone who has lived the
+            problem.
+          </p>
+        </div>
+      </div>
+
+      <div class="dossier-bio">
+        <div class="dossier-bio-text reveal">
+          <p class="body-l">
+            Rafsun founded Troyva after identifying the campus fragmentation problem firsthand as a student navigating
+            dozens of unverified group chats across Dhaka's university ecosystem. He built Troyva's complete product
+            vision, brand system, investor site, app prototype, and pitch materials before recruiting a co-founder.
+          </p>
+          <p class="body-l">
+            His approach combines analytical rigor from a pure science background — Cambridge A-Levels in Physics,
+            Mathematics, and Chemistry at a perfect 4.0 GPA — with direct campus network access as president and
+            coordinator of multiple student organizations.
+          </p>
+          <p class="body-l">
+            He has led teams at the international level as Engineering and Finance Team Lead for NASA's Human
+            Exploration Rover Challenge 2025, where his team placed 9th globally, and has won recognition at the
+            International Greenwich Olympiad for primary research on child marriage in Bangladesh — findings shared with
+            UNICEF and Plan International.
+          </p>
+        </div>
+
+        <aside class="dossier-sidebar reveal reveal-d1">
+          <div class="sidebar-block">
+            <div class="sidebar-label">Education</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Cambridge A-Levels</div>
+              <div class="sidebar-item-meta">IHSB · Physics, Mathematics, Chemistry · GPA 4.0/4.0</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Cambridge O-Levels</div>
+              <div class="sidebar-item-meta">IHSB · 8 subjects · GPA 4.0/4.0</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-label">Experience</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Research Intern</div>
+              <div class="sidebar-item-meta">Child Health Research Foundation · 2024</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Operations & Business Intern</div>
+              <div class="sidebar-item-meta">AVA Enterprise Ltd · 2023 – 2024</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-label">Leadership</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">President · Research & Science Club</div>
+              <div class="sidebar-item-meta">IHSB · 2022 – 2025 · Mentored 30+ members</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Vice-President · Hope Aid Club</div>
+              <div class="sidebar-item-meta">IHSB · 2022 – 2025</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Founder · Sarbosheba Foundation</div>
+              <div class="sidebar-item-meta">2023 – Present</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="dossier-pullquote reveal">
+        <p class="text">The question I could not stop asking was the one I had to build the answer to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS & AWARDS ============ -->
+  <section class="achievements">
+    <div class="ach-header">
+      <div>
+        <div class="eyebrow reveal">Rafsun Hossnain <span class="dot">·</span> Honors</div>
+        <h2 class="display-l reveal reveal-d1">Key achievements<br><em>& awards.</em></h2>
+      </div>
+      <p class="body-m reveal reveal-d2" style="margin-left: auto;">
+        A track record assembled across research, business, academics, and athletics — every line the result of an
+        independently run project.
+      </p>
+    </div>
+
+    <div class="ach-grid">
+      <article class="ach-card card-reveal">
+        <div class="ach-card-year">2025</div>
+        <h3 class="ach-card-title">NASA HERC — 9th Globally</h3>
+        <p class="ach-card-body">Engineering & Finance Team Lead at NASA's Human Exploration Rover Challenge. Placed
+          ninth in the world among international teams.</p>
+        <div class="ach-card-badge">International · Engineering</div>
+      </article>
+
+      <article class="ach-card card-reveal reveal-d1">
+        <div class="ach-card-year">2022 · 2023</div>
+        <h3 class="ach-card-title">IHSB Business Week</h3>
+        <p class="ach-card-body">Best Speaker 2022 and Best Product Advertiser 2023. Back-to-back recognition for public
+          speaking, pitching, and commercial instinct — a foundation for founder fluency.</p>
+        <div class="ach-card-badge">Business · Speaking</div>
+      </article>
+
+      <article class="ach-card card-reveal">
+        <div class="ach-card-year">2024</div>
+        <h3 class="ach-card-title">Climate Science Olympiad — Semifinalist</h3>
+        <p class="ach-card-body">Advanced to the global semifinal round of the Climate Science Olympiad.
+          Multidisciplinary challenge combining climate policy, systems thinking, and research communication.</p>
+        <div class="ach-card-badge">Research · Climate</div>
+      </article>
+
+      <article class="ach-card card-reveal reveal-d1">
+        <div class="ach-card-year">2022</div>
+        <h3 class="ach-card-title">Greenwich Olympiad — Silver Medal</h3>
+        <p class="ach-card-body">Silver for primary research on child marriage in Bangladesh. Findings shared with
+          UNICEF and Plan International; first research work to reach international policy audiences.</p>
+        <div class="ach-card-badge">Research · UNICEF</div>
+      </article>
+
+      <article class="ach-card card-reveal">
+        <div class="ach-card-year">2017 – 2023</div>
+        <h3 class="ach-card-title">Inter-School Olympiads — Multiple Golds & Silvers</h3>
+        <p class="ach-card-body">Gold and Silver medals across Mathematics, Science, and Bangla Olympiads. Including
+          recognition at IHSB STEM Fest 2023 and the Robi 10 Minute School Science Fair 2019.</p>
+        <div class="ach-card-badge">Academic · Multi-year</div>
+      </article>
+
+      <article class="ach-card card-reveal reveal-d1">
+        <div class="ach-card-year">2020 – 2023</div>
+        <h3 class="ach-card-title">World Scholar's Cup</h3>
+        <p class="ach-card-body">Twenty-five Gold Medals and fifteen Silver across international rounds over three
+          consecutive years. Consistent top-tier placement against global competition.</p>
+        <div class="ach-card-badge">International · 40 Medals</div>
+      </article>
+
+      <article class="ach-card card-reveal">
+        <div class="ach-card-year">2023 · 2025</div>
+        <h3 class="ach-card-title">The Daily Star Award</h3>
+        <p class="ach-card-body">Gold Medal in both 2023 and 2025 for outstanding academic achievement. National-level
+          recognition in Bangladesh's leading English-language daily.</p>
+        <div class="ach-card-badge">Academic · National</div>
+      </article>
+
+      <article class="ach-card card-reveal reveal-d1">
+        <div class="ach-card-year">In progress</div>
+        <h3 class="ach-card-title">Duke of Edinburgh International Gold Award</h3>
+        <p class="ach-card-body">Currently completing the Gold Award across Graphic Design (Photoshop, Illustrator),
+          Cycling, and Charity Leadership — a four-year commitment in discipline, fitness, and community service.</p>
+        <div class="ach-card-badge">Leadership · Global</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH & PUBLICATIONS ============ -->
+  <section class="research">
+    <div class="research-inner">
+      <div class="research-header">
+        <div class="eyebrow reveal">Research & publications</div>
+        <h2 class="display-l reveal reveal-d1">The work behind<br><em>the work.</em></h2>
+        <p class="body-l reveal reveal-d2" style="margin-top: 32px;">
+          Ongoing research projects that informed — and continue to inform — Troyva's product direction around student
+          wellbeing and verified community.
+        </p>
+      </div>
+
+      <div class="research-entry reveal">
+        <div class="research-status">Ongoing</div>
+        <div>
+          <h3 class="research-content-title">Depression among high-school students — a quantitative study</h3>
+          <p class="research-content-body">
+            Currently leading a quantitative research project on depression prevalence and contributing factors among
+            high-school students. Managing survey design, data collection, and statistical analysis as President of the
+            Research Club. Findings will inform Troyva's mental-wellbeing product pillar.
+          </p>
+          <div class="research-tags">
+            <span class="research-tag">Quantitative</span>
+            <span class="research-tag">Mental health</span>
+            <span class="research-tag">Survey design</span>
+            <span class="research-tag">Adolescents</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-entry reveal">
+        <div class="research-status">Ongoing</div>
+        <div>
+          <h3 class="research-content-title">Rohingya & Bihari community advocacy — documentary and brief</h3>
+          <p class="research-content-body">
+            Ongoing documentary and advocacy projects on issues affecting the Rohingya and Bihari communities of
+            Bangladesh. The work involves field interviews, historical research, and plans for a public advocacy brief
+            and dissemination campaign — an extension of the same commitment that funded the Sarbosheba Foundation's
+            village library.
+          </p>
+          <div class="research-tags">
+            <span class="research-tag">Documentary</span>
+            <span class="research-tag">Fieldwork</span>
+            <span class="research-tag">Advocacy</span>
+            <span class="research-tag">Minority rights</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS — RAFSUN ============ -->
+  <section class="projects">
+    <div class="projects-inner">
+      <div class="projects-header">
+        <div class="eyebrow reveal">Selected projects</div>
+        <h2 class="display-l reveal reveal-d1">Built, shipped,<br><em>in the world.</em></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card card-reveal">
+          <div class="project-number">01 / Troyva</div>
+          <h3 class="project-title">The verified campus operating system.</h3>
+          <p class="project-body">Complete product vision, brand system, investor site, app prototype, and pitch
+            materials — built solo before recruiting the co-founder. Now the principal venture.</p>
+          <div class="project-stack">Vision · Brand · Product · Fundraising</div>
+        </article>
+
+        <article class="project-card card-reveal reveal-d1">
+          <div class="project-number">02 / Sarbosheba</div>
+          <h3 class="project-title">A foundation that began with a library.</h3>
+          <p class="project-body">Village-level community service organisation in rural Bangladesh. First act was a free
+            village library funded from personal savings. Awareness programmes and educational support followed.</p>
+          <div class="project-stack">Founding · Community · Rural Bangladesh</div>
+        </article>
+
+        <article class="project-card card-reveal reveal-d2">
+          <div class="project-number">03 / NASA HERC</div>
+          <h3 class="project-title">Ninth in the world.</h3>
+          <p class="project-body">Engineering & Finance Team Lead for Bangladesh at NASA's Human Exploration Rover
+            Challenge 2025. Engineering rigor paired with budget ownership — the founder playbook, miniaturized.</p>
+          <div class="project-stack">Engineering · Leadership · International</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACT IV — THE DOSSIER: ABRAR ============ -->
+  <section class="dossier" id="abrar">
+    <div class="dossier-inner">
+      <div class="dossier-header">
+        <div class="dossier-portrait reveal">
+          <img src="assets/abrar-profile-pic.png" alt="Abrar Mahmud Hasan" height="100%">
+        </div>
+
+        <div class="dossier-intro">
+          <div class="eyebrow reveal">The co-founder <span class="dot">·</span> Act IV</div>
+          <h2 class="display-xl reveal reveal-d1">Abrar Mahmud<br>Hasan.</h2>
+          <p class="lead reveal reveal-d2">
+            Production-grade engineering, infrastructure depth, and a conviction that AI should live inside observable,
+            fault-tolerant systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="dossier-bio">
+        <div class="dossier-bio-text reveal">
+          <p class="body-l">
+            Abrar is the co-founder and CTO of Troyva, bringing production-grade engineering experience and a deep
+            conviction that AI should be a core component of observable, fault-tolerant infrastructure. As a CS student
+            at Islamic University of Technology (CGPA 3.80/4.00), he has already built and shipped real-world software
+            at scale.
+          </p>
+          <p class="body-l">
+            Before joining Troyva, Abrar served as a Software Engineering Intern at Intelsense AI, designing dashboards
+            and agentic interfaces translating complex data into actionable business intelligence. Prior to that, he
+            worked as Junior Software Engineer at Shahrish Engineering & Construction, where his supply-chain modules
+            reduced manual data handling by ninety percent.
+          </p>
+          <p class="body-l">
+            His personal project Valerix — a Kubernetes-orchestrated microservices platform on AWS EKS — reflects the
+            exact infrastructure philosophy Troyva needs as it scales globally. Champion of BUET CSE Fest 2026's
+            Microservice & DevOps Hackathon.
+          </p>
+        </div>
+
+        <aside class="dossier-sidebar reveal reveal-d1">
+          <div class="sidebar-block">
+            <div class="sidebar-label">Education</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">B.Sc. Computer Science & Engineering</div>
+              <div class="sidebar-item-meta">Islamic University of Technology · CGPA 3.80/4.00 · Expected Oct 2027</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-label">Experience</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Software Engineering Intern</div>
+              <div class="sidebar-item-meta">Intelsense AI · 2026</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Jr. Software Engineer</div>
+              <div class="sidebar-item-meta">Shahrish Engineering · 2024 – 2025</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-label">Awards</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">BUET CSE Fest 2026 — Champion</div>
+              <div class="sidebar-item-meta">Microservice & DevOps Hackathon</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Future Builders 2025 — 1st Runner-up</div>
+              <div class="sidebar-item-meta">AI-Driven Cognitive Innovation</div>
+            </div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">HackCSB — Finalist</div>
+              <div class="sidebar-item-meta">Top 7 of 116 teams</div>
+            </div>
+          </div>
+
+          <div class="sidebar-block">
+            <div class="sidebar-label">Leadership</div>
+            <div class="sidebar-item">
+              <div class="sidebar-item-title">Joint Secretary</div>
+              <div class="sidebar-item-meta">IUT Computer Society · Dec 2025 – Present · 1,000+ students</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="dossier-pullquote reveal">
+        <p class="text">AI belongs inside infrastructure, not on top of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS — ABRAR ============ -->
+  <section class="projects">
+    <div class="projects-inner">
+      <div class="projects-header">
+        <div class="eyebrow reveal">Notable systems</div>
+        <h2 class="display-l reveal reveal-d1">Shipped at<br><em>production scale.</em></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card card-reveal">
+          <div class="project-number">01 / Valerix</div>
+          <h3 class="project-title">A microservices platform, solo.</h3>
+          <p class="project-body">Kubernetes-orchestrated microservices platform on AWS EKS demonstrating service
+            resilience, controlled failures, RabbitMQ messaging, and production-style observability with Prometheus and
+            Grafana.</p>
+          <div class="project-stack">Kubernetes · RabbitMQ · Prometheus · AWS EKS</div>
+        </article>
+
+        <article class="project-card card-reveal reveal-d1">
+          <div class="project-number">02 / CurioKids</div>
+          <h3 class="project-title">An AI learning app, built for children.</h3>
+          <p class="project-body">AI-driven children's learning app with personalized puzzles, gamification, and
+            real-time progress tracking. Full-stack delivery from mobile UI to backend AI integration.</p>
+          <div class="project-stack">React Native · Node · Firebase · AI</div>
+        </article>
+
+        <article class="project-card card-reveal reveal-d2">
+          <div class="project-number">03 / HealthX</div>
+          <h3 class="project-title">Hackathon-winning rural medical support.</h3>
+          <p class="project-body">AI-powered medical support app designed for Bangladesh's Chittagong Hill Tracts and
+            underserved rural regions. Finalist at HackCSB among 116 teams.</p>
+          <div class="project-stack">React · Node · Firebase · Gemini</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BEYOND THE WORK ============ -->
+  <section class="beyond" id="beyond">
+    <div class="beyond-inner">
+      <div class="beyond-header">
+        <div class="eyebrow reveal">Beyond the work</div>
+        <h2 class="display-l reveal reveal-d1">Driven by conviction,<br><em>not circumstance.</em></h2>
+        <p class="body-l reveal reveal-d2" style="margin: 32px auto 0;">
+          Both founders built things that mattered before they built Troyva. What follows is not résumé material — it is
+          the character underneath it.
+        </p>
+      </div>
+
+      <div class="beyond-grid">
+        <article class="beyond-card wide card-reveal">
+          <div class="beyond-attrib">Rafsun Hossnain</div>
+          <h3 class="beyond-title">Sarbosheba Foundation &<br>a free village library.</h3>
+          <p class="beyond-body">
+            Founded in 2023 as a village-level community service organisation in rural Bangladesh. The first act was the
+            quiet one — a free village library funded from personal savings, for readers who had never had one.
+            Awareness programmes and educational support followed.
+          </p>
+        </article>
+
+        <article class="beyond-card tall card-reveal reveal-d1">
+          <div class="beyond-attrib">Rafsun Hossnain</div>
+          <h3 class="beyond-title">Dhaka Blues Leo Club.</h3>
+          <p class="beyond-body">
+            Active member under Lions International, District 315 B2, Bangladesh. Organised community service and
+            awareness campaigns across Dhaka — a network of service leaders that extends far beyond campus.
+          </p>
+        </article>
+
+        <article class="beyond-card card-reveal">
+          <div class="beyond-attrib">Rafsun Hossnain</div>
+          <h3 class="beyond-title">Hope Aid Club.</h3>
+          <p class="beyond-body">
+            Led campus charity initiatives including Dengue Prevention & Awareness Month. Volunteer coordination and
+            fundraising.
+          </p>
+        </article>
+
+        <article class="beyond-card card-reveal reveal-d1">
+          <div class="beyond-attrib">Abrar Mahmud Hasan</div>
+          <h3 class="beyond-title">IUT Computer Society.</h3>
+          <p class="beyond-body">
+            Joint Secretary since December 2025. Organizes technical workshops, coding competitions, and seminars for
+            over a thousand students at the country's premier CS program.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="eyebrow reveal" style="margin-bottom: 40px;">Contact</div>
+      <h2 class="display-xl contact-headline reveal reveal-d1">Let's talk.</h2>
+      <p class="lead contact-sub reveal reveal-d2">
+        The product is live. The deck is ready. We are available for a conversation this week.
+      </p>
+
+      <div class="contact-cards">
+        <div class="contact-card reveal">
+          <div class="contact-name">Rafsun Hossnain</div>
+          <div class="contact-role">Founder & CEO</div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/rafsun-hossnain-74611032a/" class="contact-link" data-hover>
+              <span>LinkedIn</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="https://www.facebook.com/rafsun.hossnain" class="contact-link" data-hover>
+              <span>Facebook</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="mailto:rafsun@troyva.com" class="contact-link" data-hover>
+              <span>rafsun@troyva.com</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal reveal-d1">
+          <div class="contact-name">Abrar Mahmud Hasan</div>
+          <div class="contact-role">Co-Founder & CTO</div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/abrar-mahmud-hasan-75a630222/" class="contact-link" data-hover>
+              <span>LinkedIn</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="https://github.com/alchemistreturns/" class="contact-link" data-hover>
+              <span>GitHub</span>
+              <span class="arrow">→</span>
+            </a>
+            <a href="mailto:abrar@troyva.com" class="contact-link" data-hover>
+              <span>abrar@troyva.com</span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <img src="assets/troyva-logo-white.png" alt="Troyva" width="200px">
+      </div>
+
+      <div class="foot-meta">
+        <div><span class="pulse"></span>Day <span id="foot-day">48</span> since founding</div>
+        <div>Dhaka <span id="foot-time">06:29</span> local</div>
+        <div>© 2026 Troyva Technologies</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================================================
+    // LOADER
+    // =========================================================
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.classList.add('out');
+      setTimeout(() => loader.remove(), 2900);
+    });
+
+    // =========================================================
+    // NAV
+    // =========================================================
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    // =========================================================
+    // CUSTOM CURSOR
+    // =========================================================
+    (function () {
+      const orb = document.getElementById('cursor-orb');
+      const trail = document.getElementById('cursor-trail');
+      const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+      if (isTouch || !orb || !trail) return;
+
+      let mx = -100, my = -100;
+      let tx = -100, ty = -100;
+
+      window.addEventListener('mousemove', (e) => {
+        mx = e.clientX; my = e.clientY;
+        orb.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
+      });
+
+      function loop() {
+        tx += (mx - tx) * 0.18;
+        ty += (my - ty) * 0.18;
+        trail.style.transform = `translate(${tx}px, ${ty}px) translate(-50%, -50%)`;
+        requestAnimationFrame(loop);
+      }
+      loop();
+
+      // Hover state
+      const hoverSel = 'a, button, [data-hover], .chapter-card, .ach-card, .project-card, .beyond-card, .contact-link, .contact-card';
+      document.querySelectorAll(hoverSel).forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          orb.classList.add('is-hover');
+          trail.classList.add('is-hover');
+        });
+        el.addEventListener('mouseleave', () => {
+          orb.classList.remove('is-hover');
+          trail.classList.remove('is-hover');
+        });
+      });
+
+      // Click
+      window.addEventListener('mousedown', () => {
+        orb.classList.add('is-click');
+        trail.classList.add('is-click');
+      });
+      window.addEventListener('mouseup', () => {
+        orb.classList.remove('is-click');
+        trail.classList.remove('is-click');
+      });
+
+      // Hide on leave
+      window.addEventListener('mouseleave', () => {
+        orb.style.opacity = '0';
+        trail.style.opacity = '0';
+      });
+      window.addEventListener('mouseenter', () => {
+        orb.style.opacity = '1';
+        trail.style.opacity = '1';
+      });
+    })();
+
+    // =========================================================
+    // REVEAL ON SCROLL
+    // =========================================================
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+    document.querySelectorAll('.reveal, .card-reveal').forEach(el => io.observe(el));
+
+    // =========================================================
+    // CHAPTER CARD — mouse-tracked glow
+    // =========================================================
+    document.querySelectorAll('.chapter-card, .ach-card, .project-card, .beyond-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mx', x + '%');
+        card.style.setProperty('--my', y + '%');
+      });
+    });
+
+    // =========================================================
+    // LIVE TICKER — Dhaka time
+    // =========================================================
+    function dhakaTime() {
+      return new Intl.DateTimeFormat('en-GB', {
+        hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Dhaka'
+      }).format(new Date());
+    }
+    function updateTime() {
+      const t = dhakaTime();
+      const a = document.getElementById('live-time');
+      const b = document.getElementById('foot-time');
+      if (a) a.textContent = t;
+      if (b) b.textContent = t;
+    }
+    updateTime();
+    setInterval(updateTime, 30000);
+
+    // =========================================================
+    // DAY COUNTER — days since March 1, 2026
+    // =========================================================
+    function daysSinceFounding() {
+      const founding = new Date('2026-03-01T00:00:00+06:00');
+      const now = new Date();
+      return Math.max(0, Math.floor((now - founding) / 86400000));
+    }
+    function updateDayCount() {
+      const n = daysSinceFounding();
+      ['day-count', 'foot-day', 'stat-days'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = n;
+      });
+    }
+    updateDayCount();
+
+    // =========================================================
+    // SMOOTH ANCHOR SCROLL
+    // =========================================================
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // =========================================================
+    // MOBILE NAV TOGGLE
+    // =========================================================
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+      navLinks.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>
